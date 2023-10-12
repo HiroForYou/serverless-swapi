@@ -9,6 +9,7 @@
     "swapiGet": "npx serverless invoke local -f swapiGet",
     "swapiPost": "npx serverless invoke local -f swapiPost --path data.json",
     "deploy": "npx serverless deploy",
+    "clean": "npx serverless remove --stage dev --region us-east-1",
     "doc": "npx swagger-jsdoc -d swagger.js -o swagger.json"
   },
   "author": "Cristhian Wiki",
