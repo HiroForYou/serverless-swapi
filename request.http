@@ -5,6 +5,6 @@ content-type: application/json
 
 {
 
-    "model": "people"
+    "model": "vehicles"
 
 }

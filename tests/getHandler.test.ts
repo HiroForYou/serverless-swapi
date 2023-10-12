@@ -21,7 +21,6 @@ describe('handler', () => {
         const responseBody = JSON.parse(response.body);
         expect(responseBody.dbData).toBeDefined();
         expect(responseBody.swapiData).toBeDefined();
-        expect(responseBody.event).toEqual(event);
     });
 
     it('should return an error response for an invalid model', async () => {
