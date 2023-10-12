@@ -28,4 +28,4 @@ plugins:
   - serverless-esbuild
 
 custom:
-  database_url: 'mysql://5lxjcu68ryeselthtf8t:pscale_pw_3tBqyxzSjjDmQMEEZuYdq8FOiMN18ErHa4fttRLhkmQ@aws.connect.psdb.cloud/proveedor?ssl={"rejectUnauthorized":true}'
+  database_url: 'COLOCAR DATABASE_URL AQUÍ'
