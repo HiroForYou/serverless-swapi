@@ -1,0 +1,10 @@
+GET https://mbp3ngk39g.execute-api.us-east-1.amazonaws.com/dev/swapi/films HTTP/1.1
+
+POST https://mbp3ngk39g.execute-api.us-east-1.amazonaws.com/dev/swapi HTTP/1.1
+content-type: application/json
+
+{
+
+    "model": "people"
+
+}
