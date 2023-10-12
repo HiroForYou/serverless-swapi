@@ -1,0 +1,31 @@
+service: serverless-swapi
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  swapiPost:
+    handler: routes/postHandler.handler
+    environment:
+      DATABASE_URL: ${self:custom.database_url}
+    events:
+      - http:
+          path: swapi
+          method: post
+
+  swapiGet:
+    handler: routes/getHandler.handler
+    environment:
+      DATABASE_URL: ${self:custom.database_url}
+    events:
+      - http:
+          path: swapi/{model}
+          method: get
+plugins:
+  - serverless-esbuild
+
+custom:
+  database_url: 'mysql://5erk1vct9u5cxjmry8ef:pscale_pw_iy7Au6BVKx4CpAsQECNU0McfllwLs2DfY94GbzOtSYI@aws.connect.psdb.cloud/proveedor?ssl={"rejectUnauthorized":true}'

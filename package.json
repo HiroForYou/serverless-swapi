@@ -1,0 +1,41 @@
+{
+  "name": "serverless-swapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.config.js",
+    "start": "npx tsx app.ts",
+    "swapiGet": "npx serverless invoke local -f swapiGet",
+    "swapiPost": "npx serverless invoke local -f swapiPost --path data.json",
+    "deploy": "npx serverless deploy",
+    "doc": "npx swagger-jsdoc -d swagger.js -o swagger.json"
+  },
+  "author": "Cristhian Wiki",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1472.0",
+    "axios": "^1.5.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.1",
+    "serverless": "^3.35.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "translate-google": "^1.5.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/aws-lambda": "^8.10.124",
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.19",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.4",
+    "esbuild": "^0.14.25",
+    "jest": "^29.7.0",
+    "serverless-esbuild": "^1.25.0",
+    "ts-jest": "^29.1.1",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  }
+}
