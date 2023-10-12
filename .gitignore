@@ -6,4 +6,4 @@ node_modules
 .serverless
 coverage/
 Issues.md/
-.env
+/.env
